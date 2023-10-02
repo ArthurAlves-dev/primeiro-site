@@ -11,9 +11,10 @@ html, body {
 }
 
 header {
-    margin: 0px;
     background-color: black;
-    color: white;    
+    color: white; 
+    
+    margin: 0px;     
 }
 
 header > h1 {
@@ -30,8 +31,9 @@ header > p {
 }
 
 a {
-    text-decoration: none;
     color: white;
+    
+    text-decoration: none;
     font-size: bolder;
 }
 
@@ -66,6 +68,7 @@ section.imagem {
 section.imagem > p {
     color: white;
     background-color: rgba(78, 78, 78, 0.466);  
+    
     display: inline-block;
     padding: 8px; 
 }
