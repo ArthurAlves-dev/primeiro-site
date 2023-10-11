@@ -246,27 +246,9 @@ div.video > iframe {
     height: 90%;   
 }
 
-div.input-block span.placeholder {
-    position: absolute;
-    margin: 17px 0;
-    padding: 0 4px;
-    font-family: Roboto, sans-serif;
-  
-    color:  #6c757d;
-  
-    display: flex;
-    align-items: center;
-  
-    font-size: 1.6rem;
-  
-    top: 270px;
-    left: 20px;
-  
-    transition: all 0.2s;
-    transform-origin: 0% 0%;
-    background: none;
-    pointer-events: none;
-  }
+div.input-block > input {
+    margin-bottom: 20px;
+}
 
 div.input-block input {
     font-weight: 500;
@@ -291,6 +273,122 @@ div.input-block input:focus{
     border-color: #284B63;
 }
     
-div.input-block input:focus + span.placeholder {
+div.input-block input:focus + span.placeholder + span.email {
     color: #284B63;
+}
+
+div.input-block span.email {
+    position: absolute;
+    margin: 17px 0;
+    padding: 0 4px;
+    font-family: Roboto, sans-serif;
+  
+    color:  #6c757d;
+  
+    display: flex;
+    align-items: center;
+  
+    font-size: 1.6rem;
+  
+    top: 10px;
+    left: 20px;
+  
+    transition: all 0.2s;
+    transform-origin: 0% 0%;
+    background: none;
+    pointer-events: none;
+}
+
+div.input-block input:valid + span.email,
+div.input-block input:focus + span.email {
+    transform: scale(0.8) translateY(-30px);
+    background: #fff;
+}
+
+div.input-block span.nome {
+    position: absolute;
+    margin: 17px 0;
+    padding: 0 4px;
+    font-family: Roboto, sans-serif;
+  
+    color:  #6c757d;
+  
+    display: flex;
+    align-items: center;
+  
+    font-size: 1.6rem;
+  
+    top: 92px;
+    left: 20px;
+  
+    transition: all 0.2s;
+    transform-origin: 0% 0%;
+    background: none;
+    pointer-events: none;
+}
+
+div.input-block input:valid + span.nome,
+div.input-block input:focus + span.nome {
+    transform: scale(0.8) translateY(-30px);
+    background: #fff;
+}
+
+div.input-block span.sobre {
+    position: absolute;
+    margin: 17px 0;
+    padding: 0 4px;
+    font-family: Roboto, sans-serif;
+  
+    color:  #6c757d;
+  
+    display: flex;
+    align-items: center;
+  
+    font-size: 1.6rem;
+  
+    top: 175px;
+    left: 20px;
+  
+    transition: all 0.2s;
+    transform-origin: 0% 0%;
+    background: none;
+    pointer-events: none;
+}
+
+div.input-block input:valid + span.sobre,
+div.input-block input:focus + span.sobre {
+    transform: scale(0.8) translateY(-30px);
+    background: #fff;
+}
+
+div.input-block span.psw {
+    position: absolute;
+    margin: 17px 0;
+    padding: 0 4px;
+    font-family: Roboto, sans-serif;
+  
+    color:  #6c757d;
+  
+    display: flex;
+    align-items: center;
+  
+    font-size: 1.6rem;
+  
+    top: 260px;
+    left: 20px;
+  
+    transition: all 0.2s;
+    transform-origin: 0% 0%;
+    background: none;
+    pointer-events: none;
+}
+
+div.input-block input:valid + span.psw,
+div.input-block input:focus + span.psw {
+    transform: scale(0.8) translateY(-30px);
+    background: #fff;
+}
+
+span.align {
+    margin-left: 140px;
 }

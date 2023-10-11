@@ -12,39 +12,34 @@
     </header>
     <main style=" margin-top: 60px; max-width: 400px;">
         <form action="login.javascript" method="get">
-            <p>
-                <label for="iemail">Digite seu email:</label>
-                <input type="email" name="email" id="iemail" required autocomplete="on">
-            </p>
-            <p>
-                <label for="iname">Nome:</label>
-                <input type="text" name="name" id="iname" required autocomplete="on">
-            </p>
-            <p>
-                <label for="isname">Sobrenome:</label>
+            <div class="input-block">
+                <input type="email" name="email" id="iemail" required autocomplete="on" spellcheck="false" style="margin-bottom: 20px;">
+                <span class="email">
+                    Email
+                </span>
+                       
+                <input type="text" name="name" id="iname" required autocomplete="on" spellcheck="false">
+                <span class="nome">
+                    Nome
+                </span>
+                     
                 <input type="text" name="sname" id="isname" required autocomplete="on">
-            </p>
-            <p>
-                <label for="inum">Número cel:</label>
-                <input type="tel" name="num" id="inum" required autocomplete="on"
-                pattern="*(\d{2}\)[0-9]{4}-[0-9]{4}$" placeholder="(xx)xxxx-xxxx">
-            </p>
-            <p>
-                <label for="ipsw">Crie uma senha:</label>
+                <span class="sobre">
+                    Sobrenome
+                </span>
+                        
                 <input type="password" name="psw" id="ipsw" required
-                minlength="6" maxlength="8">
-            </p>
-            <p>
+                minlength="6" maxlength="8"> 
+                <span class="psw">
+                    Senha
+                </span>              
+            </div>
+            <span class="align">
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
-            </p>
-            <div class="input-block">
-                <input type="text" name="input-text" id="input-text" required spellcheck="false">
-                <span class="placeholder">
-                 Placeholder
-                </span>
-            </div>
+            </span>
         </form>
     </main>
+    <p style="text-align: center;"><a href="link01.html" target="_self" class="voltar">voltar</a></p>   
 </body>
 </html>
