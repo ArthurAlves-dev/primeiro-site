@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Cadastre-se</h1>
+    </header>
+    <main style=" margin-top: 60px; max-width: 400px;">
+        <form action="login.javascript" method="get">
+            <p>
+                <label for="iemail">Digite seu email:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="on">
+            </p>
+            <p>
+                <label for="iname">Nome:</label>
+                <input type="text" name="name" id="iname" required autocomplete="on">
+            </p>
+            <p>
+                <label for="isname">Sobrenome:</label>
+                <input type="text" name="sname" id="isname" required autocomplete="on">
+            </p>
+            <p>
+                <label for="inum">Número cel:</label>
+                <input type="tel" name="num" id="inum" required autocomplete="on"
+                pattern="*(\d{2}\)[0-9]{4}-[0-9]{4}$" placeholder="(xx)xxxx-xxxx">
+            </p>
+            <p>
+                <label for="ipsw">Crie uma senha:</label>
+                <input type="password" name="psw" id="ipsw" required
+                minlength="6" maxlength="8">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+            <div class="input-block">
+                <input type="text" name="input-text" id="input-text" required spellcheck="false">
+                <span class="placeholder">
+                 Placeholder
+                </span>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
