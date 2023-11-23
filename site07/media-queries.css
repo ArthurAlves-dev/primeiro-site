@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 580px) and (max-width: 664px) { 
+    main > .exemplos {
+        display: inline-flex;
+        align-items: center;
+        height: 38vh;
+    }
+    main > .exemplos > .exe1 {
+        margin-left: 2%;
+        margin-right: 0px;
+        padding: 0px;
+    }
+    main > .exemplos > .exe2 {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
+    }
+    main > .exemplos > .exe3 {
+        margin-right: 2%;
+        margin-left: 0px;
+        padding: 0px;
+    } 
+    .midia-social{
+        margin-left: 10%;
+    }  
+
+    .todos-produtos{
+        column-count: 2;       /* organizar as colunas */
+    }
+}
+
+@media screen and (min-width: 665px) {
+    main > .exemplos {
+        display: inline-flex;
+        align-items: center;
+        height: 38vh;
+    }
+    .todos-produtos{
+        column-count: 2;        
+    }
+    .midia-social{
+        margin-left: 12%;
+    }  
+}

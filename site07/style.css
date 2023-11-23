@@ -1,0 +1,339 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+body {
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+}
+
+/* HEADER */
+
+header {
+    background-color: rgb(59, 59, 59);
+    padding: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 99;
+    position: relative;
+}
+
+header > h1 {
+    color: rgb(31, 114, 238);
+    margin-left: auto;
+}
+
+header > h1 > .logo {
+    color: white;
+}
+
+#imgLOG {
+    position: absolute;
+    top: 20%;
+    left: 86%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+nav > a {
+    font-size: bolder;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 1em;
+    margin-left: 3px;
+}
+
+a:hover {
+    padding: 4px;
+    background-color:rgb(145, 145, 145);
+    transform: translate(-3px, -3px);                           /* levantar botões */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
+    transition: transform 0.2s; 
+}
+
+.menu {
+    text-align: center;
+}
+
+/* END */
+
+/* SECOND HEADER */
+
+main > div.prop {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 1em;
+    background-image: radial-gradient( #ffffff, #c7c7c7);
+}
+
+.prop-left {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: left;
+}
+
+.prop-left > h2 {
+    font-size: 1.5em;
+}
+
+.prop-left > p {
+    font-size: 0.7em;
+}
+
+.prop-left > button {
+    color: white;
+    margin-top: 10px;
+    padding: 6px 40px;
+    border: none;
+    background-color: rgb(31, 114, 238);
+    border-radius: 9999px;
+}
+
+.prop-left > button:hover {
+    border: 2px solid rgb(27, 94, 194);
+    transform: translate(-1px, -1px);                           /* levantar botões */
+    transition: transform 0.2s; 
+}
+   
+.prop-right {
+    margin-right: 20px;
+    height: 200px;
+    width: 400px;
+    background-color: rgb(59, 59, 59);
+}
+
+/* END */
+/* EXEMPLOS */
+
+main > .exemplos {
+    display: grid;
+    background-color: rgb(59, 59, 59);
+    width: 100vw;
+    height: 500px;
+}
+
+main > .exemplos > .exe1 {
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 150px;
+    margin: auto;
+}
+
+main > .exemplos > .exe2 {
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 150px;
+    margin: auto;
+}
+
+main > .exemplos > .exe3 {
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 150px;
+    margin: auto;
+}
+
+.exe1:hover {
+    box-shadow: 6px 6px 6px solid black;
+    transform: translate(-3px, -3px);                           /* levantar botões */
+    transition: transform 0.5s; 
+}
+
+.exe2:hover {
+    box-shadow: 6px 6px 6px solid black;
+    transform: translate(-3px, -3px);                           /* levantar botões */
+    transition: transform 0.5s; 
+}
+
+.exe3:hover {
+    box-shadow: 6px 6px 6px solid black;
+    transform: translate(-3px, -3px);                           /* levantar botões */
+    transition: transform 0.5s; 
+}
+
+/* END */
+/* PRODUTOS SELECIONADOS */
+
+.titulo > h3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+}
+
+.underline {
+    width: 150px;
+    height: 6px;
+    background-color: rgb(31, 114, 238);
+    margin: auto;
+    border-radius: 20%;
+}
+
+/* END */
+/* PRODUTOS */
+
+main {
+    background-color: #ebebeb;
+}
+
+.produto {
+    margin: auto;
+    max-width: 400px;
+    text-align: center;
+    padding: 10px;
+}
+
+.img-prod {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+.name-prod {
+    margin-top: 8px;
+    font-size: 1em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.rate {
+    color: rgb(27, 94, 194);
+}
+
+main > .produto:hover {
+    box-shadow: 6px 6px 6px solid black;
+    transform: translate(-3px, -3px);                           /* levantar botões */
+    transition: transform 0.5s; 
+}
+
+main > .paginas {
+    text-align: center;
+    padding: 4px;
+}
+
+.paginas > a {
+    text-decoration: none;
+    color: black;
+}
+
+/* END */
+/* FOOTER 1 */
+
+.rodape {
+    width: 100vw;
+    height: 40vh;
+    background-color: rgb(59, 59, 59);
+    display: grid;
+    position: relative;
+}
+
+.rodape > .download-1 {
+    background-color: white;
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.rodape > .download-2 {
+    background-color: white;
+    width: 120px;
+    height: 30px;
+    margin-top: -10px;
+    margin-left: 5px;
+}
+
+.rodape > .download-3 {
+    background-color: white;
+    width: 120px;
+    height: 30px;
+    margin-top: -10px;
+    margin-left: 5px;
+}
+
+.rodape > .download-4 {
+    background-color: white;
+    width: 80vw;
+    height: 30px;
+    margin-left: 8.5%;
+    margin-top: 60px;
+}
+
+.rodape > .download-1:hover {
+    box-shadow: 6px 6px 6px solid black;
+    transform: translate(2px, -2px);                           /* levantar botões */
+    transition: transform 0.5s; 
+}
+
+.rodape > .download-2:hover {
+    box-shadow: 6px 6px 6px solid black;
+    transform: translate(2px, -2px);                           /* levantar botões */
+    transition: transform 0.5s; 
+}
+
+.rodape > .download-3:hover {
+    box-shadow: 6px 6px 6px solid black;
+    transform: translate(2px, -2px);                           /* levantar botões */
+    transition: transform 0.5s; 
+}
+
+.rodape > .download-4:hover {
+    box-shadow: 6px 6px 6px solid black;
+    transform: translate(2px, -2px);                           /* levantar botões */
+    transition: transform 0.5s; 
+}
+
+/* END */
+/* FOOTER 2 */
+
+footer > ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: bolder;
+    color: #ffffff;
+    width: 100vw;
+    background-color: rgb(31, 114, 238);
+    margin: 0px;
+}
+
+footer > ul > li {
+    border: 1px solid rgba(59, 59, 59, 0.534);
+    padding: 4px;
+}
+
+footer > ul > li:hover {
+    border: 1px solid rgb(27, 27, 27);
+}
+
+/* END */
+/* FOOTER 3 */
+
+footer > .rodape-final {
+    width: 100vw;
+    height: 20vh;
+    background-color: rgb(59, 59, 59);
+}
+
+.midia-social {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 6.3%;
+
+}
+
+.midia-social:hover {
+    box-shadow: 6px 6px 6px solid black;
+    transform: translate(-4px, -4px);                           /* levantar botões */
+    transition: transform 0.5s; 
+}
